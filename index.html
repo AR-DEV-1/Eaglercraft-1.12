@@ -16,9 +16,6 @@
 		<script type="text/javascript" src="fix-webm-duration.js"></script>
 		<script type="text/javascript">
 			window.addEventListener("load", () => {
-				if(document.location.href.startsWith("file:")) {
-					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
-				}else {
 					window.eaglercraftXOpts = {
 						container: "game_frame",
 						assetsURI: "assets.epk",
@@ -34,7 +31,6 @@
 						]
 					};
 					main();
-				}
 			});
 		</script>
 	</head>
